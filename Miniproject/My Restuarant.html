@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://localhost:3000/single-category.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Restuarant</title>
+    <link rel="stylesheet" href="./My Restuarant_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./My Restuarant_files/styles.css">
+  <script src="./My Restuarant_files/jquery.min.js.download"></script>
+  <script src="./My Restuarant_files/bootstrap.min.js.download"></script>
+    <link href="./My Restuarant_files/css2" rel="stylesheet"> 
+    <link href="./My Restuarant_files/css2(1)" rel="stylesheet">
+  <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+<body><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+//]]></script><script async="" src="./My Restuarant_files/browser-sync-client.js.download"></script>
+
+  <header>
+    <nav id="header-nav" class="navbar navbar-default"><!--Class in bootstrap predefined-->
+      <div class="container"><!--container changes width based on browser, entire content sits inside this container-->
+     <!--header nav is above div  container because we want navbar to stretch till end of the browser but content inside the container wont stretch till end-->
+      <div class="navbar-header"><!--some padding and floating inside navbar header class (a bootstarp class),if we want to use navbar brand inside this use navbar header-->
+        <a href="http://localhost:3000/index.html" class="pull-left visible-md visible-lg"><!--pullleft to align logo float left and visible md and lg is to make logo visible only in large and medium device not mobile-->
+          <div id="logo-img"></div><!--image will be added as background image so in styling we will add-->
+        </a>
+        <div class="navbar-brand">
+          <a href="http://localhost:3000/index.html"><h1>Coronavirus Restuarant</h1></a><!--Heading must be clickable-->
+          <p><!--inside a paragraph we will write the image and span -->
+            <img src="./My Restuarant_files/star-k-logo.png" alt="Certified-Virus"><!--Image a small image to be created-->
+            <span>
+              Kosher Certified Virus
+            </span><!--After doing this everything comes down one after the another since block elemnts so style it-->
+          </p><!--Heading is wrapped inside navbar brandand floated left and logo is not floated left so it comes one down the other-->
+           <!--Soltion is to float the logo left so go to logo class and put "pull-left" a bootstrap class-->
+        </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <!--navbar-toggle controls positoning whole button(check in bootstrap.css)basically positions relative and float right with padding margin top and some main features navbar toggle is visible only when min width is less than 768px else display=none 
+            collapse is javascipt module it will pll up and pull down the menu bar with three buttons....will learn more(plugins)-->
+            <!--data target is attribute has #collapsable-nav(user defined id name) used to target next menu bar id named collapsable-nav  -->
+            <span class="sr-only">Toggle Naavigation</span><!--sr-only-these are for screen readers not shown i the output-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span><!--three icon bar to be put here-->
+          </button>
+      </div>
+      <div id="collapsable-nav" class="collapse navbar-collapse"><!--collapsable nav is targetted from the button class above,collapse and navbar collapse mst be put according to bootstrap
+      create an unordered list with id nav-list and class nav and navbar-nav-"Im going to be a component of navigation  ie converts unordered list into nicely done menu in navigation bar " and navbar-right is to float our nav right-->
+        <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="http://localhost:3000/menu-categories.html">
+              <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu
+            </a><!--icon font="glyphicon glyphicon-cutlery(vector image)", and br is used to put break between icon and menu and hidden xs will hide the break if size is extra small-->
+          </li>
+          <li>
+           <a href="http://localhost:3000/single-category.html#">
+             <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>   
+          </li>
+          <li>
+              <a href="http://localhost:3000/single-category.html#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>   
+             </li>
+             <li id="phone" class="hidden-xs"><!--hidden in super small-->
+               <a href="tel:48777677677"><!--Triggers call-->
+                 <span>48777677677</span></a><div>*We Deliver</div>
+             </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </header>
+   <div id="call-btn" class="visible-xs">
+     <a class="btn" href="tel:48777677677">
+       <span class="glyphicon glyphicon-earphone"></span>48777677677
+     </a>
+   </div>
+   <div id="xs-deliver" class="text-center visible-xs">*We Deliver</div> 
+   <div id="main-content" class="container">
+       <h2 id="menu-categories-title" class="text-center">Lunch Menu</h2>
+       <div class="text-center">Lunch is not served until 1pm</div>
+    <section class="row">
+      <div class="menu-item-tile col-md-6"><!--col-md-6 willl take half the screen when medium-->
+          <div class="row"><!--another row used because we need to subdivide the things like picture takes 5 and desc takes 7-->
+              <div class="col-sm-5"><!--inside row we will subdivide again as 5 and 7-->
+                  <div class="menu-item-photo"><!--class will be  relative -->
+                      <div>D03</div><!--div inside this class menu-item-photo is made absolute that is moved based on the class...we will move bottom right-->
+                      <img class="img-responsive" width="250" height="150" src="./My Restuarant_files/B-1.jpg" alt="Item"><!--This is image section-->
+
+                  </div>
+                  <div class="menu-item-price">1000$<span>(pint)</span>13$<span>(quart)</span></div><!--this is price section right below photo-->
+              </div>
+              <div class="menu-item-desciption col-sm-7"><!--second-->
+                  <h3 class="menu-item-title">Veal with mixxx</h3>
+                 <p class="menu-item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo,
+                      impedit maxime possimus voluptate nesciunt minima debitis ullam repudiandae eius perferendis omnis
+                       sequi, aut eaque aliquid quam odio obcaecati enim.
+                       nesciunt minima debitis ullam repudiandae eius perferendis omnis
+                       sequi, aut eaque aliquid quam odio obcaecati enimnesciunt minima debitis ullam repudiandae eius perferendis omnis
+                       sequi, aut eaque aliquid quam odio obcaecati enim</p>
+              </div>
+          </div>
+          <hr class="visible-xs">
+      </div>
+      
+      <div class="menu-item-tile col-md-6"><!--col-md-6 willl take half the screen when medium-->
+        <div class="row"><!--another row used because we need to subdivide the things like picture takes 5 and desc takes 7-->
+            <div class="col-sm-5"><!--inside row we will subdivide again as 5 and 7-->
+                <div class="menu-item-photo"><!--class will be  relative -->
+                    <div>D03</div><!--div inside this class menu-item-photo is made absolute that is moved based on the class...we will move bottom right-->
+                    <img class="img-responsive" width="250" height="150" src="./My Restuarant_files/B-1.jpg" alt="Item"><!--This is image section-->
+
+                </div>
+                <div class="menu-item-price">1000$<span>(pint)</span>13$<span>(quart)</span></div><!--this is price section right below photo-->
+            </div>
+            <div class="menu-item-desciption col-sm-7"><!--second-->
+                <h3 class="menu-item-title">Veal with mixxx</h3>
+               <p class="menu-item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo,
+                    impedit maxime possimus voluptate nesciunt minima debitis ullam repudiandae eius perferendis omnis
+                     sequi, aut eaque aliquid quam odio obcaecati enim.</p>
+            </div>
+        </div>
+        <hr class="visible-xs">
+    </div>
+    <div class="clearfix visible-md-block visible-lg-block"></div>
+    <div class="menu-item-tile col-md-6"><!--col-md-6 willl take half the screen when medium-->
+        <div class="row"><!--another row used because we need to subdivide the things like picture takes 5 and desc takes 7-->
+            <div class="col-sm-5"><!--inside row we will subdivide again as 5 and 7-->
+                <div class="menu-item-photo"><!--class will be  relative -->
+                    <div>D03</div><!--div inside this class menu-item-photo is made absolute that is moved based on the class...we will move bottom right-->
+                    <img class="img-responsive" width="250" height="150" src="./My Restuarant_files/B-1.jpg" alt="Item"><!--This is image section-->
+
+                </div>
+                <div class="menu-item-price">1000$<span>(pint)</span>13$<span>(quart)</span></div><!--this is price section right below photo-->
+            </div>
+            <div class="menu-item-desciption col-sm-7"><!--second-->
+                <h3 class="menu-item-title">Veal with mixxx</h3>
+               <p class="menu-item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo,
+                    impedit maxime possimus voluptate nesciunt minima debitis ullam repudiandae eius perferendis omnis
+                     sequi, aut eaque aliquid quam odio obcaecati enim.</p>
+            </div>
+        </div>
+        <hr class="visible-xs">
+    </div>
+    <div class="menu-item-tile col-md-6"><!--col-md-6 willl take half the screen when medium-->
+        <div class="row"><!--another row used because we need to subdivide the things like picture takes 5 and desc takes 7-->
+            <div class="col-sm-5"><!--inside row we will subdivide again as 5 and 7-->
+                <div class="menu-item-photo"><!--class will be  relative -->
+                    <div>D03</div><!--div inside this class menu-item-photo is made absolute that is moved based on the class...we will move bottom right-->
+                    <img class="img-responsive" width="250" height="150" src="./My Restuarant_files/B-1.jpg" alt="Item"><!--This is image section-->
+
+                </div>
+                <div class="menu-item-price">1000$<span>(pint)</span>13$<span>(quart)</span></div><!--this is price section right below photo-->
+            </div>
+            <div class="menu-item-desciption col-sm-7"><!--second-->
+                <h3 class="menu-item-title">Veal with mixxx</h3>
+               <p class="menu-item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo,
+                    impedit maxime possimus voluptate nesciunt minima debitis ullam repudiandae eius perferendis omnis
+                     sequi, aut eaque aliquid quam odio obcaecati enim.</p>
+            </div>
+        </div>
+        <hr class="visible-xs">
+    </div>
+    <div class="menu-item-tile col-md-6"><!--col-md-6 willl take half the screen when medium-->
+        <div class="row"><!--another row used because we need to subdivide the things like picture takes 5 and desc takes 7-->
+            <div class="col-sm-5"><!--inside row we will subdivide again as 5 and 7-->
+                <div class="menu-item-photo"><!--class will be  relative -->
+                    <div>D03</div><!--div inside this class menu-item-photo is made absolute that is moved based on the class...we will move bottom right-->
+                    <img class="img-responsive" width="250" height="150" src="./My Restuarant_files/B-1.jpg" alt="Item"><!--This is image section-->
+
+                </div>
+                <div class="menu-item-price">1000$<span>(pint)</span>13$<span>(quart)</span></div><!--this is price section right below photo-->
+            </div>
+            <div class="menu-item-desciption col-sm-7"><!--second-->
+                <h3 class="menu-item-title">Veal with mixxx</h3>
+               <p class="menu-item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo,
+                    impedit maxime possimus voluptate nesciunt minima debitis ullam repudiandae eius perferendis omnis
+                     sequi, aut eaque aliquid quam odio obcaecati enim.</p>
+            </div>
+        </div>
+        <hr class="visible-xs">
+    </div>
+    <div class="menu-item-tile col-md-6"><!--col-md-6 willl take half the screen when medium-->
+        <div class="row"><!--another row used because we need to subdivide the things like picture takes 5 and desc takes 7-->
+            <div class="col-sm-5"><!--inside row we will subdivide again as 5 and 7-->
+                <div class="menu-item-photo"><!--class will be  relative -->
+                    <div>D03</div><!--div inside this class menu-item-photo is made absolute that is moved based on the class...we will move bottom right-->
+                    <img class="img-responsive" width="250" height="150" src="./My Restuarant_files/B-1.jpg" alt="Item"><!--This is image section-->
+
+                </div>
+                <div class="menu-item-price">1000$<span>(pint)</span>13$<span>(quart)</span></div><!--this is price section right below photo-->
+            </div>
+            <div class="menu-item-desciption col-sm-7"><!--second-->
+                <h3 class="menu-item-title">Veal with mixxx</h3>
+               <p class="menu-item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo,
+                    impedit maxime possimus voluptate nesciunt minima debitis ullam repudiandae eius perferendis omnis
+                     sequi, aut eaque aliquid quam odio obcaecati enim.</p>
+            </div>
+        </div>
+        <hr class="visible-xs">
+    </div>
+
+    </section> 
+
+
+   </div>
+    <footer class="panel-footer"><!--defaualt background color and some properties-->
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span> Hours:</span><br>
+            Sun-Thurs:11.15am -10pm<br>
+            Fri:11.15am-2.30pm<br>
+            Saturday closed
+            <hr class="visible-xs">
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br>
+            **************************<br>
+            *************************
+            <p>*Free delivery only for region around 10kms from hotel else
+              minimum of 30rs charge is added.
+            </p>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
+              <p>
+              "When you want to have best Gobi in cheap Price Come and have it here"</p>
+              <p>"*Free delivery only for region around 10kms from hotel else
+                minimum of 30rs charge is added.""
+              </p>
+            </section>
+        </div>
+        <div class="text-center">© Copyright Coronavirus 2020</div>
+      </div>
+        </footer>
+
+</body></html>
